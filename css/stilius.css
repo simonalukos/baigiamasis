@@ -5,7 +5,7 @@ header {
 footer {
   background-color: lightgrey;
   padding: 10px;
-  font-family: Tahoma;
+  font-family: Optima;
   font-size: 13px;
 }
 div.logo {
@@ -14,7 +14,7 @@ div.logo {
 p {
   color: black;
   font-size: 16px;
-  font-family: Tahoma;
+  font-family: Optima;
   padding: 15px;
   margin: 15px;
   text-decoration: none;
@@ -23,7 +23,7 @@ p {
 .meniu a {
   color: black;
   font-size: 18px;
-  font-family: Tahoma;
+  font-family: Cambria;
   margin: 15px;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@ div.furniture {
 div.about_us {
   color: black;
   font-size: 18px;
-  font-family: Tahoma;
+  font-family: Optima;
   margin: 15px;
   text-decoration: none;
   text-align: center;
@@ -83,11 +83,14 @@ div.ideas {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
 }
+.ideas img {
+  display: block;
+}
 
 .nuoroda {
   color: black;
   font-size: 13px;
-  font-family: Tahoma;
+  font-family: Optima;
   transition: color 1s ease-in-out;
   text-align: center;
   padding: 15px;
@@ -116,14 +119,14 @@ div.return {
   margin: 10px;
   padding: 10px;
   color: black;
-  font-family: Tahoma;
+  font-family: Optima;
   font-size: 15px;
   text-decoration: none;
 }
 .return a {
   color: black;
   font-size: 15px;
-  font-family: Tahoma;
+  font-family: Optima;
   margin: 15px;
   text-decoration: none;
 }
