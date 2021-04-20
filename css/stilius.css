@@ -5,38 +5,102 @@ header {
 footer {
   background-color: lightgrey;
   padding: 10px;
-  font-family: Optima;
+  margin: 10px;
+  font-family: sans-serif;
   font-size: 13px;
 }
 div.logo {
   margin-top: 10px;
 }
-p {
-  color: black;
-  font-size: 16px;
-  font-family: Optima;
-  padding: 15px;
-  margin: 15px;
-  text-decoration: none;
-  text-align: center;
-}
+
 .meniu a {
   color: black;
   font-size: 18px;
-  font-family: Cambria;
+  font-family: sans-serif;
   margin: 15px;
   text-decoration: none;
 }
 .meniu > a {
   padding: 5px 10px 5px 0;
   margin-right: 10px;
-  transition: color 1s ease-in-out;
+  transition: color 1.5s ease-in-out;
   width: 80px;
 }
 .meniu > a:hover {
   color: darkolivegreen;
   font-size: 1.5rem;
 }
+/* Section - app */
+.section-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-app .app-image {
+  width: 30%;
+  flex-grow: 1;
+  margin-right: 40px;
+}
+
+.section-app .app-image img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-app .app-image:hover img {
+  transform: scale(1.18);
+}
+
+.section-app .text-container {
+  width: 30%;
+  flex: 0 1 30%;
+}
+
+.section-app .text-container h3 {
+  font-size: 18px;
+}
+
+.section-app .text-container p {
+  line-height: 28px;
+}
+
+/*Section - global*/
+.section {
+  width: 100%;
+  margin: 20px auto 80px;
+  max-width: 1300px;
+  font-family: sans-serif;
+
+  /*top left+right bottom*/
+}
+/*Section - features*/
+.section-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-features .feature {
+  width: 30%;
+}
+
+.section-features .feature img {
+  width: 100%;
+}
+
+.section-features .feature-text {
+  display: block;
+  margin: 12px 0 16px;
+}
+
+.section-features .feature-sub-text {
+  display: block;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 22px;
+}
+/**/
 
 .gif {
   display: flex;
@@ -50,15 +114,6 @@ div.furniture {
   padding: 50px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.about_us {
-  color: black;
-  font-size: 18px;
-  font-family: Optima;
-  margin: 15px;
-  text-decoration: none;
-  text-align: center;
 }
 
 div.beds {
@@ -119,14 +174,14 @@ div.return {
   margin: 10px;
   padding: 10px;
   color: black;
-  font-family: Optima;
+  font-family: sans-serif;
   font-size: 15px;
   text-decoration: none;
 }
 .return a {
   color: black;
   font-size: 15px;
-  font-family: Optima;
+  font-family: sans-serif;
   margin: 15px;
   text-decoration: none;
 }
