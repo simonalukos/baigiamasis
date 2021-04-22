@@ -1,34 +1,70 @@
-header {
-  text-align: center;
+.gif #selector {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  display: block;
 }
 
 footer {
   background-color: lightgrey;
   padding: 10px;
-  margin: 10px;
-  font-family: sans-serif;
-  font-size: 13px;
-}
-div.logo {
-  margin-top: 10px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-.meniu a {
-  color: black;
-  font-size: 18px;
-  font-family: sans-serif;
-  margin: 15px;
+/*Navigation*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.navigation a {
+  font-weight: 300;
   text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.navigation a:hover {
+  color: goldenrod;
+}
+
+.navigation ul,
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li,
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/**/
+.meniu {
+  font-family: "Oswald", sans-serif;
+  padding: 50px;
+}
+.meniu a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
 }
 .meniu > a {
   padding: 5px 10px 5px 0;
   margin-right: 10px;
-  transition: color 1.5s ease-in-out;
   width: 80px;
+  letter-spacing: 1px;
 }
 .meniu > a:hover {
-  color: darkolivegreen;
-  font-size: 1.5rem;
+  color: goldenrod;
 }
 /* Section - app */
 .section-app {
@@ -38,9 +74,10 @@ div.logo {
 }
 
 .section-app .app-image {
-  width: 30%;
+  width: 100%;
   flex-grow: 1;
   margin-right: 40px;
+  overflow: hidden;
 }
 
 .section-app .app-image img {
@@ -59,11 +96,14 @@ div.logo {
 }
 
 .section-app .text-container h3 {
-  font-size: 18px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .section-app .text-container p {
   line-height: 28px;
+  text-align: justify;
+  letter-spacing: 1px;
 }
 
 /*Section - global*/
@@ -71,7 +111,7 @@ div.logo {
   width: 100%;
   margin: 20px auto 80px;
   max-width: 1300px;
-  font-family: sans-serif;
+  font-family: "Oswald", sans-serif;
 
   /*top left+right bottom*/
 }
@@ -92,21 +132,18 @@ div.logo {
 .section-features .feature-text {
   display: block;
   margin: 12px 0 16px;
+  letter-spacing: 1px;
 }
 
 .section-features .feature-sub-text {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   text-align: justify;
   line-height: 22px;
+  letter-spacing: 1px;
 }
 /**/
 
-.gif {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 div.furniture {
   text-align: center;
   display: grid;
@@ -114,6 +151,8 @@ div.furniture {
   padding: 50px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 div.beds {
@@ -123,6 +162,7 @@ div.beds {
   padding: 50px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  letter-spacing: 1px;
 }
 
 .ideas {
@@ -131,12 +171,14 @@ div.beds {
 .ideas > a {
   outline: solid black;
   margin: 5px;
+  letter-spacing: 1px;
 }
 div.ideas {
   text-align: center;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  letter-spacing: 1px;
 }
 .ideas img {
   display: block;
@@ -144,137 +186,55 @@ div.ideas {
 
 .nuoroda {
   color: black;
-  font-size: 13px;
-  font-family: Optima;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
   transition: color 1s ease-in-out;
   text-align: center;
-  padding: 15px;
+  padding: 50px;
+  letter-spacing: 1px;
 }
 .nuoroda > a:hover {
-  color: darkolivegreen;
-}
-div.wardrobes {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  padding: 50px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  color: goldenrod;
 }
 
-div.chairs {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  padding: 50px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-div.return {
-  margin: 10px;
-  padding: 10px;
-  color: black;
-  font-family: sans-serif;
-  font-size: 15px;
-  text-decoration: none;
-}
-.return a {
-  color: black;
-  font-size: 15px;
-  font-family: sans-serif;
-  margin: 15px;
-  text-decoration: none;
-}
-
-div.tables {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.lamps {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.rugs {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.sideboards {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.wallpapers {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.decorations {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.plants {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-div.sofas {
-  text-align: center;
-  display: grid;
-  margin: 15px;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
+div.wardrobes,
+div.chairs,
+div.tables,
+div.lamps,
+div.rugs,
+div.sideboards,
+div.wallpapers,
+div.decorations,
+div.plants,
+div.sofas,
 div.mirrors {
   text-align: center;
   display: grid;
   margin: 15px;
+  padding: 50px;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  letter-spacing: 1px;
+}
+
+div.return {
+  margin: 10px;
+  padding: 10px;
+  color: goldenrod;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.return a {
+  color: goldenrod;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  margin: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 
 * {
   box-sizing: content-box;
-}
-
-/* Style the search field */
-form.example input[type="text"] {
-  font-size: 13px;
-  border: 1px solid grey;
-  margin: 15px;
-  float: right;
-  width: 13%;
-  background: #f1f1f1;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
 }
